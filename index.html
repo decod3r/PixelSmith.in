@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixelsmith | Photography & Cinematography</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Modern Glassmorphic Navigation -->
+    <nav class="navbar">
+    <div class="logo">
+        <a href="#home">
+            <img src="asset/logod.png" alt="PixelSmith Signature">
+        </a>
+    </div>
+    <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#gallery">Portfolio</a></li>                             
+        <li><a href="#booking">Book Session</a></li>
+    </ul>
+</nav>
+
+    <!-- Hero Section with Background Slideshow -->
+    <section id="home" class="hero">
+        <div class="slideshow-container">
+            <!-- Placeholders for your best shots (Fades seamlessly) -->
+            <div class="slide active" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)), url('asset/portraits/Project1/11.jpg');"></div>
+            <div class="slide" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)), url('asset/portraits/Project2/11.jpg');"></div>
+            <div class="slide" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)), url('asset/portraits/Project1/1.jpg');"></div>
+            <div class="slide" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)), url('asset/portraits/Project3/4.jpg');"></div>
+            <div class="slide" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)), url('asset/portraits/Project3/5.jpg');"></div>
+            <div class="slide" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)), url('asset/portraits/Project4/8.jpg');"></div>
+            <div class="slide" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)), url('asset/portraits/Project3/4.jpg');"></div>
+        </div>
+
+        <div class="hero-content">
+            <h1>Capturing Moments,<br>Preserving <span>Stories</span>.</h1>
+            <p>Cinematic elegance through a modern lens.</p>
+            <a href="#gallery" class="btn btn-ios">Explore Portfolio</a>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <div class="section-title">
+            <h2>The Gallery</h2>
+            <p>A curated selection of motion & still visuals</p>
+        </div>
+        
+        <div class="gallery-filters">
+            <span class="filter-btn active" data-filter="all">All</span>
+            <span class="filter-btn" data-filter="portraits">Portraits</span>
+            <span class="filter-btn" data-filter="events">Events</span>
+            <span class="filter-btn" data-filter="misc">Miscellaneous</span>
+        </div>
+
+        <div class="gallery-grid">
+    
+         <a href="project.html" class="gallery-item portraits">
+            <div class="gallery-slideshow">
+                <div class="mini-slide active" style="background-image: url('asset/portraits/Project1/1.jpg');"></div>
+                <div class="mini-slide" style="background-image: url('asset/portraits/Project1/3.jpg');"></div>
+                <div class="mini-slide" style="background-image: url('asset/portraits/Project1/12.jpg');"></div>
+            </div>
+            <div class="overlay">
+                <span>View All Portraits <i class="fas fa-arrow-right" style="margin-left: 8px;"></i></span>
+            </div>
+        </a>    
+
+        <!-- Project 2 Link -->
+        <a href="project.html" class="gallery-item portraits">
+            <div class="gallery-slideshow">
+                <div class="mini-slide active" style="background-image: url('asset/portraits/Project2/2.jpg');"></div>
+                <div class="mini-slide" style="background-image: url('asset/portraits/Project2/7.jpg');"></div>
+                <div class="mini-slide" style="background-image: url('asset/portraits/Project2/15.jpg');"></div>
+            </div>
+            <div class="overlay">
+                <span>View All Portraits <i class="fas fa-arrow-right" style="margin-left: 8px;"></i></span>
+            </div>
+        </a>  
+
+         <!-- Project 3 Link -->
+        <a href="project.html" class="gallery-item portraits">
+            <div class="gallery-slideshow">
+                <div class="mini-slide active" style="background-image: url('asset/portraits/Project3/1.jpg');"></div>
+                <div class="mini-slide" style="background-image: url('asset/portraits/Project3/4.jpg');"></div>
+                <div class="mini-slide" style="background-image: url('asset/portraits/Project3/2.jpg');"></div>
+            </div>
+            <div class="overlay">
+                <span>View All Portraits <i class="fas fa-arrow-right" style="margin-left: 8px;"></i></span>
+            </div>
+        </a>  
+
+         <!-- Project 1 Link -->
+        <a href="project.html" class="gallery-item events">
+            <div class="gallery-slideshow">
+                <div class="mini-slide active" style="background-image: url('asset/event/Project1/9.jpg');"></div>
+                <div class="mini-slide" style="background-image: url('asset/event/Project1/5.jpg');"></div>
+                <div class="mini-slide" style="background-image: url('asset/event/Project1/16.jpg');"></div>
+            </div>
+            <div class="overlay">
+                <span>View All Projects <i class="fas fa-arrow-right" style="margin-left: 8px;"></i></span>
+            </div>
+        </a>
+
+         <!-- Project 3 Link -->
+        <a href="project.html" class="gallery-item events">
+            <div class="gallery-slideshow">
+                <div class="mini-slide active" style="background-image: url('asset/event/Project2/1.jpg');"></div>
+                <div class="mini-slide" style="background-image: url('asset/event/Project2/11.jpg');"></div>
+                <div class="mini-slide" style="background-image: url('asset/event/Project2/12.jpg');"></div>
+            </div>
+            <div class="overlay">
+                <span>View All Projects <i class="fas fa-arrow-right" style="margin-left: 8px;"></i></span>
+            </div>
+        </a>
+
+    <!-- Add additional anchors formatted identically pointing to your future separate files... -->
+         </div>
+    </section>
+
+    <div id="booking" class="booking-card">
+    <form id="appointment-form" class="booking-form">
+        <!-- Name Field: Mandatory -->
+        <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" required placeholder="Your Name">
+        </div>
+        
+        <!-- Email Field: Mandatory + Restricts to correct format -->
+        <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" required placeholder="Your Email">
+        </div>
+
+        <!-- Mobile Number Field: Mandatory + Restricts to exactly 10 digits -->
+        <div class="form-group">
+            <label for="mobile">Mobile Number</label>
+            <input type="tel" id="mobile" required placeholder="xxxxxxxxxx" pattern="[0-9]{10}" title="Please enter a valid 10-digit mobile number">
+        </div>
+
+        <div class="form-row">
+            <!-- Date Field: OPTIONAL (Excluded from mandatory condition) -->
+            <div class="form-group">
+                <label for="date">Preferred Date (Optional)</label>
+                <input type="date" id="date">
+            </div>
+            
+            <!-- Session Type Dropdown: Mandatory -->
+            <div class="form-group">
+                <label for="session-type">Session Type</label>
+                <select id="session-type" required>
+                    <option value="" disabled selected>Select a session...</option>
+                    <option value="portrait">Portrait Session</option>
+                    <option value="cinematic">Cinematic Videography</option>
+                    <option value="event">Event/Wedding</option>
+                    <option value="commercial">Commercial/Brand</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Project Details: Mandatory -->
+        <div class="form-group">
+            <label for="notes">Project details</label>
+            <textarea id="notes" rows="4" required placeholder="Tell me a bit about your creative goals..."></textarea>
+        </div>
+
+        <button type="submit" class="btn-ios-submit">Request Booking</button>
+    </form>
+</div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 PIXELSMITH. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/pixelsmith.in/"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

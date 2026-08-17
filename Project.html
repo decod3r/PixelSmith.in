@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Projects | Pixelsmith</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="sub-page">
+
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html#home">
+                <img src="asset/logod.png" alt="Pixelsmith Signature">
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="index.html#gallery">Portfolio</a></li>
+            <li><a href="index.html#booking">Book Session</a></li>
+        </ul>
+    </nav>
+
+    <header class="project-header">
+        <div class="header-container">
+            <a href="index.html#gallery" class="back-link"><i class="fas fa-chevron-left"></i> Back to Main</a>
+            <h1>All Projects</h1>
+            <p class="project-description">
+                Explore our full archival collections. Click any project cover to expand and view the complete cinematic set.
+            </p>
+        </div>
+    </header>
+
+    <main class="accordion-gallery-section">
+        
+        <div class="accordion-item">
+            <div class="project-thumb" onclick="toggleGallery('project1')">
+                <img src="asset/portraits/Project1/1.jpg" alt="Editorial Portraits">
+                <div class="overlay">
+                    <span>Project 1 <i class="fas fa-chevron-down" style="margin-left: 8px;"></i></span>
+                </div>
+            </div>
+            
+            <div id="project1" class="expanded-photos">
+                <div class="expanded-grid">
+                    <img src="asset/portraits/Project1/1.jpg" class="lightbox-trigger" alt="Detail Shot">
+                    <img src="asset/portraits/Project1/3.jpg" class="lightbox-trigger" alt="Detail Shot">
+                    <img src="asset/portraits/Project1/2.jpg" class="lightbox-trigger" alt="Detail Shot">
+                    <img src="asset/portraits/Project1/8.jpg" class="lightbox-trigger" alt="Detail Shot">
+                    <img src="asset/portraits/Project1/5.jpg" class="lightbox-trigger" alt="Detail Shot">
+                    <img src="asset/portraits/Project1/6.jpg" class="lightbox-trigger" alt="Detail Shot">
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <div class="project-thumb" onclick="toggleGallery('project2')">
+                <img src="asset/portraits/Project2/4.jpg" alt="Event Photography">
+                <div class="overlay">
+                    <span>Project 2<i class="fas fa-chevron-down" style="margin-left: 8px;"></i></span>
+                </div>
+            </div>
+            
+            <div id="project2" class="expanded-photos">
+                <div class="expanded-grid">
+                    <img src="asset/portraits/Project2/12.jpg" class="lightbox-trigger" alt="project2_portrait">
+                    <img src="asset/portraits/Project2/11.jpg" class="lightbox-trigger" alt="project2_portrait">
+                    <img src="asset/portraits/Project2/8.jpg" class="lightbox-trigger" alt="Dproject2_portrait">
+                    <img src="asset/portraits/Project2/7.jpg" class="lightbox-trigger" alt="Dproject2_portrait">
+                    <img src="asset/portraits/Project2/1.jpg" class="lightbox-trigger" alt="Dproject2_portrait">
+                    <img src="asset/portraits/Project2/15.jpg" class="lightbox-trigger" alt="project2_portrait">
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <div class="project-thumb" onclick="toggleGallery('project3')">
+                <img src="asset/portraits/Project3/1.jpg" alt="Event Photography">
+                <div class="overlay">
+                    <span>Project 3<i class="fas fa-chevron-down" style="margin-left: 8px;"></i></span>
+                </div>
+            </div>
+            
+            <div id="project3" class="expanded-photos">
+                <div class="expanded-grid">
+                    <img src="asset/portraits/Project3/1.jpg" class="lightbox-trigger" alt="project3_portrait">
+                    <img src="asset/portraits/Project3/2.jpg" class="lightbox-trigger" alt="project3_portrait">
+                    <img src="asset/portraits/Project3/4.jpg" class="lightbox-trigger" alt="project3_portrait">
+                    <img src="asset/portraits/Project3/5.jpg" class="lightbox-trigger" alt="project3_portrait">
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <div class="project-thumb" onclick="toggleGallery('project4')">
+                <img src="asset/portraits/Project4/8.jpg" alt="Event Photography">
+                <div class="overlay">
+                    <span>Project 4 <i class="fas fa-chevron-down" style="margin-left: 8px;"></i></span>
+                </div>
+            </div>
+            
+            <div id="project4" class="expanded-photos">
+                <div class="expanded-grid">
+                    <img src="asset/portraits/Project4/4.jpg" class="lightbox-trigger" alt="project4_portrait">
+                    <img src="asset/portraits/Project4/2.jpg" class="lightbox-trigger" alt="project4_portrait">
+                    <img src="asset/portraits/Project4/5.jpg" class="lightbox-trigger" alt="project4_portrait">
+                    <img src="asset/portraits/Project4/7.jpg" class="lightbox-trigger" alt="project4_portrait">
+                    <img src="asset/portraits/Project4/1.jpg" class="lightbox-trigger" alt="project4_portrait">
+                    <img src="asset/portraits/Project4/8.jpg" class="lightbox-trigger" alt="project4_portrait">
+
+                </div>
+            </div>
+        </div>
+
+
+
+    </main>
+
+    <div id="lightbox-modal" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img" src="" alt="Zoomed Preview">
+        <div id="lightbox-caption" class="lightbox-caption-text"></div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 PIXELSMITH. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
